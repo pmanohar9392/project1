@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Patient Deatils">
+        <lightning-input type="text" label="Enter Hospital Name" onchange={acceptHname}></lightning-input>
+        
+        <lightning-input type="text" label="Enter patient name" onchange={acceptName}></lightning-input>
+        
+        <lightning-input type="number" label="Enter patient no" onchange={acceptNo}></lightning-input>
+    
+         <lightning-input type="number" label="patient age" onchange={acceptAge}></lightning-input> 
+         <br/> Hospital Name: {hospital_name}
+         <br/> patient name is: {Patient.pt_name}
+         <br/> patient no is: {Patient.pt_no}
+        <br/> patient age is: {Patient.pt_age}
+
+        <lightning-button variant="destructive" label="save " title="Destructive action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    </lightning-card>
+
+</template>

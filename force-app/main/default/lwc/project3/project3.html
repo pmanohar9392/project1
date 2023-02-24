@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Record view  ">
+  <lightning-record-view-form object-api-name="Account"
+  record-id="0019D00000Qu3HYQAZ" >
+     <lightning-output-field   field-name="Name"></lightning-output-field>
+     <lightning-output-field field-name="AnnualRevenue"></lightning-output-field>
+  </lightning-record-view-form> 
+</lightning-card>
+
+<lightning-card title="Record Edit Form">
+    <lightning-record-edit-form object-api-name="Contact">
+    <lightning-input-field field-name="Name"></lightning-input-field>
+    <lightning-input-field field-name="Account Name"></lightning-input-field>
+    <lightning-input-field field-name="Email"></lightning-input-field>
+    <lightning-button variant="brand" label="submit" type="submit" onclick={changeHandler} ></lightning-button>
+</lightning-record-edit-form>
+</lightning-card>
+
+<lightning-card title="Record form">
+   <lightning-record-form object-api-name="Account" record-id="0019D00000QovtnQAB" layout-type="Compact" mode="Edit">
+
+   </lightning-record-form>
+
+</lightning-card>
+</template>

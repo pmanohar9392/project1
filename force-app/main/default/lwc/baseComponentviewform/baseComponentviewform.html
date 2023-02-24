@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Record View Form">
+        <lightning-record-view-form object-api-name="Account" record-id="0019D00000QovtoQAB">
+    <lightning-output-field field-name="Name"></lightning-output-field>
+    <lightning-output-field field-name="AnnualRevenue"></lightning-output-field>
+    <lightning-output-field field-name="Rating"></lightning-output-field>
+    <lightning-output-field field-name="Industry"></lightning-output-field>
+
+        </lightning-record-view-form>
+    </lightning-card>
+    <lightning-card title="Record edit form">
+    <lightning-record-edit-form object-api-name="Account" >
+ <lightning-input-field field-name="Name"></lightning-input-field>
+ <lightning-input-field field-name="AnnualRevenue"></lightning-input-field>
+ <lightning-input-field field-name="Rating"></lightning-input-field>
+ <lightning-input-field field-name="Industry"></lightning-input-field>
+ <lightning-button variant="brand" label="submit" type="submit" onclick={changeHandler} ></lightning-button>
+    </lightning-record-edit-form>
+</lightning-card>
+
+<lightning-card title="Record form">
+    <lightning-record-form object-api-name="Account" record-id="0019D00000QovtoQAB" layout-type="Compact" mode="readonly" columns="2">
+        
+    </lightning-record-form>
+</lightning-card>
+</template>
